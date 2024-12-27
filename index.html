@@ -3,10 +3,10 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="description" content="Visual Instruction Tuning">
+  <meta name="description" content="ViT-Split">
   <meta name="keywords" content="multimodal chatbot">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>LLaVA-Grounding</title>
+  <title>ViT-Split</title>
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
@@ -118,7 +118,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">🌋 LLaVA-Grounding: Grounded Visual Chat with Large Multimodal Models
+            <h1 class="title is-1 publication-title"> <img id="painting_icon" width="5%" src="images/hydra.png"> ViT-Split: Unleashing the Power of Vision Foundation Models via Efficient Splitting Heads
             <h4></h4>
                 <!-- <h4 class="title is-3 publication-title"><span class="is-size-3"> Learning to Use <span class="is-size-2">Tools</span> For Creating Multimodal <span class="is-size-2">Agents</span></span></h3> -->
             <!-- <h3 class="title is-3 publication-title">Visual Instruction Tuning</h3>
@@ -126,67 +126,45 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
             <br>
             <div class="is-size-5 publication-authors">
               <span class="author-block">
-                <a href="https://scholar.google.com/citations?user=B8hPxMQAAAAJ&hl=zh-CN" style="color:#a800d7;font-weight:normal;">Hao Zhang<sup>*</sup><sup><b style="color:#a800d7; font-weight:normal">&#x25B6 </b></sup></a>,
+                <a href="https://jackyfl.github.io" style="color:#a800d7;font-weight:normal;">Yifan Li</Li></Li><sup><b style="color:#a800d7; font-weight:normal">&#x25B6 </b></sup></a>,
               </span>
               <span class="author-block">
-                <a href="https://scholar.google.com.hk/citations?user=zdgHNmkAAAAJ&hl=en" style="color:#f68946;font-weight:normal;">Hongyang Li<sup>*</sup><sup><b style="color:#f68946; font-weight:normal">&#x25B6 </b></sup></a>,
+                <a href="https://crazy-jack.github.io" style="color:#f68946;font-weight:normal;">Tianqin Li<sup><b style="color:#f68946; font-weight:normal">&#x25B6 </b></sup></a>,
               </span>
               <span class="author-block">
-                <a href="https://fengli-ust.github.io/" style="color:#a800d7;font-weight:normal;">Feng Li<sup><b style="color:#a800d7; font-weight:normal">&#x25B6 </b></sup></a>,
+                <a href="https://scholar.google.com/citations?hl=zh-CN&user=KkPdvB8AAAAJ" style="color:#0071f2; font-weight:normal;">Xin Li<sup><b style="color:#0071f2; font-weight:normal">&#x25B6 </b></sup></a>,
               </span>
               <span class="author-block">
-                <a href="https://rentainhe.github.io/" style="color:#0071f2;font-weight:normal;">Tianhe Ren<sup><b style="color:#0071f2; font-weight:normal">&#x25B6 </b></sup></a>,
+                <a href="https://hewenbin.github.io" style="color:#0071f2;font-weight:normal;">Wenbin He<sup><b style="color:#0071f2; font-weight:normal">&#x25B6 </b></sup></a>,
               </span>
               <span class="author-block">
-                <a href="https://maureenzou.github.io/" style="color:#56d9dd;font-weight:normal;">Xueyan Zou<sup><b style="color:#56d9dd; font-weight:normal">&#x25B6 </b></sup></a>,
+                <a href="https://www.egr.msu.edu/~yukong/" style="color:#a800d7;font-weight:normal;">Yu Kong<sup><b style="color:#a800d7;font-weight:normal;">&#x25B6 </b><sup></a>,
               </span>
               <span class="author-block">
-                <a href="https://lsl.zone/" style="color:#f5643f;font-weight:normal;">Shilong Liu<sup><b style="color:#f5643f; font-weight:normal">&#x25B6 </b></sup></a>,
-              </span>
-              <span class="author-block">
-                <a href="https://sega-hsj.github.io/" style="color:#aea1e7;font-weight:normal;">Shijia Huang<sup><b style="color:#aea1e7; font-weight:normal">&#x25B6 </b></sup></a>,
-              </span>
-              <br>
-              <span class="author-block">
-                <a href="https://www.microsoft.com/en-us/research/people/jfgao/" style="color:#149308;font-weight:normal;">Jianfeng Gao<sup>&#x2628;</sup><sup><b style="color:#149308; font-weight:normal">&#x25B6 </b></sup></a>,
-              </span>
-              <span class="author-block">
-                <a href="https://www.leizhang.org/" style="color:#0071f2;font-weight:normal;">Lei Zhang<sup>&#x2628;</sup><sup><b style="color:#0071f2; font-weight:normal">&#x25B6 </b></sup></a>,
-              </span>
-              <span class="author-block">
-                <a href="https://chunyuan.li/" style="color:#149308;font-weight:normal;">Chunyuan Li<sup><b style="color:#149308; font-weight:normal">&#x25B6<sup><b style="color:#f68946; font-weight:normal">🚩 </b></sup> </b></sup></a>,
-              </span>
-              <span class="author-block">
-                <a href="https://jwyang.github.io/" style="color:#149308;font-weight:normal;">Jianwei Yang<sup><b style="color:#149308; font-weight:normal">&#x25B6 <sup><b style="color:#f68946; font-weight:normal">🚩 </b></sup></b></sup></a>,
+                <a href="https://www.liu-ren.com" style="color:#0071f2;font-weight:normal;">Ren Liu<sup><b style="color:#0071f2;font-weight:normal">&#x25B6 <sup><b style="color:#f68946; font-weight:normal">🚩 </b></sup></b></sup></a>,
               </span>
               
             </div>
             
             <br>
             <div class="is-size-5 publication-authors">
-              <span class="author-block"><b style="color:#a800d7; font-weight:normal">&#x25B6 </b> HKUST</span>
-              <span class="author-block"><b style="color:#f68946; font-weight:normal">&#x25B6 </b> SCUT</b></span>
-              <span class="author-block"><b style="color:#149308; font-weight:normal">&#x25B6 </b> Microsoft Research, Redmond </span>
-              <span class="author-block"><b style="color:#0071f2; font-weight:normal">&#x25B6 </b> IDEA Research</span>
-              <span class="author-block"><b style="color:#56d9dd; font-weight:normal">&#x25B6 </b> University of Wisconsin-Madison </span>
-              <span class="author-block"><b style="color:#f5643f; font-weight:normal">&#x25B6 </b> Tsinghua University </span>
-              <span class="author-block"><b style="color:#aea1e7; font-weight:normal">&#x25B6 </b> CUHK </span>
+              <span class="author-block"><b style="color:#a800d7; font-weight:normal">&#x25B6 </b> Michigan State University </span>
+              <span class="author-block"><b style="color:#f68946; font-weight:normal">&#x25B6 </b> Carnegie Mellon University </b></span>
+              <span class="author-block"><b style="color:#0071f2; font-weight:normal">&#x25B6 </b> Bosch </span>
             </div>
             
-            <div class="is-size-6 publication-authors">
-              <span class="author-block"><sup>*</sup> Equal Contribution</span>
-              &nbsp&nbsp
+            <!-- <div class="is-size-6 publication-authors">
               <span class="author-block"><sup>&#x2628;</sup> Equal Advisory Contribution</span>
               &nbsp&nbsp
               <span class="author-block"><sup><b style="color:#f68946; font-weight:normal">🚩 </b></sup>Directional Lead</span>
-            </div>
+            </div> -->
             <br>
 
 
             <div class="column has-text-centered">
               <div class="publication-links">
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/2312.02949" target="_blank"
+                  <a href="" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="ai ai-arxiv"></i>
@@ -195,7 +173,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
                   </a>
                 </span>
                 <span class="link-block">
-                  <a href="https://github.com/UX-Decoder/LLaVA-Grounding" target="_blank"
+                  <a href="" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -203,24 +181,24 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
                     <span>Code</span>
                   </a>
                 </span>
-                <span class="link-block">
-                  <a href="https://llava-grounding.deepdataspace.com/" target="_blank"
+                <!-- <span class="link-block">
+                  <a href="" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="far fa-images"></i>
                     </span>
                     <span>Demo</span>
                   </a>
-                </span>
-                <span class="link-block">
-                  <a href="https://github.com/UX-Decoder/LLaVA-Grounding" target="_blank"
+                </span> -->
+                <!-- <span class="link-block">
+                  <a href="" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fas fa-database"></i>
                     </span>
                     <span>Dataset</span>
                   </a>
-                </span>
+                </span> -->
                 <!-- <span class="link-block">
                   <a href="" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
@@ -250,17 +228,65 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 
 
 
+  <section class="section" style="background-color:#efeff081">
+    <div class="container is-max-desktop">
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-six-fifths">
+          <h4 class="title is-2"> <img id="painting_icon" width="4.5%" src="images/summarization.png">  Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+
+              Vision foundation models (VFMs) have demonstrated remarkable performance across 
+              a wide range of downstream tasks. While several VFM adapters have shown promising 
+              results by leveraging the prior knowledge of VFMs, we identify two inefficiencies 
+              in these approaches. First, the interaction between convolutional neural network (CNN) 
+              and VFM backbone triggers early layer gradient backpropagation. Second, existing 
+              methods require tuning all components, adding complexity. Besides, these adapters 
+              alter VFM features, underutilizing the prior knowledge. To tackle these challenges, 
+              we propose a new approach called ViT-Split, based on a key observation: the layers 
+              of several VFMs, like DINOv2, can be divided into two distinct components: an extractor 
+              for learning low-level features and an adapter for learning task-specific features. 
+              Leveraging this insight, we eliminate the CNN branch and introduce two heads, task 
+              head and prior head, to the frozen VFM. The task head is designed to learn task-specific 
+              features, mitigating the early gradient propagation issue. The prior head is used 
+              to leverage the multi-scale prior features from the frozen VFM, reducing tuning 
+              parameters and overfitting. Extensive experiments on various tasks (e.g., segmentation, 
+              detection, and visual question answering) validate the effectiveness and efficiency
+               of ViT-Split. Specifically, ViT-Split reduces training time up to $4\times$ while 
+               achieving comparable or even better results on ADE20K, compared to other VFM adapters.
+      
+              </p>
+           </p>
+  
+          </div>
+        </div>
+      </div>
+        
+    </div>
+  </section>
+
   <section class="section">
     <div class="container is-max-desktop">
       <!-- Abstract. -->
       <div class="columns is-centered has-text-centered">
         <div class="column is-six-fifths">
-          <!-- <h4 class="title is-5">Abstract</h2> -->
+          <h4 class="title is-2">  <img id="painting_icon" width="4%" src="images/creativity.png">  Motivation</h2>
           <div class="content has-text-justified">
             <p>
               <!-- image -->
-                <img id="teaser" width="100%" src="images/vis.png">
+              <centering>
+                <div style="text-align: center;">
+                  <img id="teaser" width="60%" src="images/vitsplit-motivation.png">     
+                </div>
+              </centering> 
 
+              Comparison between previous VFM adapters and ours. Previous VFM adapters (like ViT-Adapter, ViT-CoMer) integrate low-level features learned by a CNN branch 
+              into a learnable VFM through an adapter. Our method exploits VFM prior knowledge with two heads: a prior head for multi-scale 
+              prior feature learning from a frozen VFM, and a task head for task-specific feature learning, initialized by the last few layers 
+              of the VFM.
+      
+              </p>
            </p>
   
           </div>
@@ -271,25 +297,18 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
   </section>
 
   <section class="section"  style="background-color:#efeff081">
-    <div class="container is-max-desktop" id="gradio">
-      <gradio-app src="https://llava-grounding.deepdataspace.com/"></gradio-app>
-    </div>
-  </section>
-
-  <section class="section"  style="background-color:#efeff081">
     <div class="container is-max-desktop">
       <!-- Abstract. -->
       <div class="columns is-centered has-text-centered">
         <div class="column is-six-fifths">
-          <h2 class="title is-3">Highlights</h2>
+          <h2 class="title is-2"> <img id="painting_icon" width="3.8%" src="images/highlighter.png">  Highlights</h2>
           <div class="content has-text-justified">
             <p>
-              LLaVA-Grounding maintains 
+              ViT-Split maintains: 
               <ol type="1">
-                <li><b>New grounded visual chat data</b>. <span style="font-size: 95%;">We introduce a data annotation pipeline to label high-quality Grounded Visual Chat (GVC) data. Leveraging human-labeled object detection data and harnessing the robust matching capability of GPT-4, we have successfully labeled 150K GVC instances using the LLaVA instruction tuning dataset.</span></li>
-                <li><b>🌋 LLaVA-Grounding Model</b>. <span style="font-size: 95%;">We present an end-to-end model, which connects a Large Multimodal Model (LMM) with a grounding model to facilitate grounded visual chat. Our model supports both object and pixel-level grounding, accommodating various visual prompts such as mark, click, box, and scribble. Our model offers a broader range of input and output prompt types compared to other LMMs.</li>
-                <li><b>Grounding Bench</b>. <span style="font-size: 95%;">We establish Grounding Bench for evaluating grounded visual chat and propose an auto-evaluation pipeline aided by GPT-4. This benchmark assesses grounded visual chat capabilities and provides performance metrics for other state-of-the-art methods.</li>
-                <li><b>Performance</b>. <span style="font-size: 95%;">Our empirical study validates the effectiveness of LLaVA-Grounding with the best overall performance on our Grounding Bench and competitive performance on traditional grounding tasks such as RefCOCO and Flickr30K.</li>
+                <li><b>New observations in VFMs</b>. <span style="font-size: 95%;">We observe that several VFMs, especially DINOv2, can be divided into two distinct components:  an extractor for learning low-level features and an adapter for learning task-specific features.</span></li>
+                <li><b>New VFM adapter</b>. <span style="font-size: 95%;">We propose an efficient and effective adapter ViT-Split for VFMs. Specifically, ViT-Split introduces two heads, a task head and a prior head. The task head is for learning task-specific features. The prior head is a lightweight CNN for extracting multi-scale prior features from a frozen VFM.  </li>
+                <li><b>Performance</b>. <span style="font-size: 95%;">We perform extensive experiments and detailed ablations on various downstream tasks to validate the effectiveness of our method, including segmentation, detection and VQA.</li>
               </ol>  
            </p>
   
@@ -302,14 +321,69 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 
 
 
-
+  <section class="section">
+    <!-- Results. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-six-fifths">
+        <h2 class="title is-3"> <img id="painting_icon" width="3%" src="images/insight.png">  Observation in VFMs</h2>
+      </div>
+    </div>
+    <!-- </div> -->
+    <!--/ Results. -->    
+  <div class="container is-max-desktop">
+  
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <div class="content has-text-justified"> 
+  
+          <centering>
+            <div style="text-align: center;">
+              <img id="teaser" width="80%" src="images/CKA comparison.png">
+            </div>
+          </centering>
+          The CKA comparison of layer features across different VFMs, including a self-supervised method DINOv2-L, 
+          and three image-text alignment methods EVA2-L, CLIP-L and SigLip-L. For most of these VFMs, especially 
+          DINOv2, the features in the early and later layers show distinct similarities within their respective groups.
+          <p>
+          </p>
+    <!-- <div style="text-align: center;">
+        <h3 class="title is-5"><img id="painting_icon" width="3%" src="https://cdn-icons-png.flaticon.com/512/3515/3515174.png"> Training Data Example</h2>
+      <img id="teaser" width="70%" src="images/llava-plus-example.png">     
+    </div> -->
+  
+        <div class="content has-text-justified"> 
+  
+          <centering>
+            <div style="text-align: center;">
+              <img id="teaser" width="80%" src="images/layer_feature.png">
+            </div>
+          </centering>
+          Notably, the segmentation and detection models are fine-tuned from the DINOv2-S. 
+          The features within the red dotted boxes across the three tasks exhibit similar 
+          patterns, emphasizing detailed representations. In the later layers, however, 
+          the features diverge, becoming more specialized for each task.
+          <p>
+          </p>
+    <!-- <div style="text-align: center;">
+        <h3 class="title is-5"><img id="painting_icon" width="3%" src="https://cdn-icons-png.flaticon.com/512/3515/3515174.png"> Training Data Example</h2>
+      <img id="teaser" width="70%" src="images/llava-plus-example.png">     
+    </div> -->
+  
+        </div>
+  
+                  
+      </div>
+    </div>
+  </div>
+  </section>
+    
 
 
 <section class="section">
   <!-- Results. -->
   <div class="columns is-centered has-text-centered">
     <div class="column is-six-fifths">
-      <h2 class="title is-3">🌋 LLaVA-Grounging Network Architechture</h2>
+      <h2 class="title is-3"> <img id="painting_icon" width="3%" src="images/framework_icon.png">  ViT-Split Architechture</h2>
     </div>
   </div>
   <!-- </div> -->
@@ -322,25 +396,42 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 
           <centering>
             <div style="text-align: center;">
-              <img id="teaser" width="60%" src="images/llavag_arch.png">     
+              <img id="teaser" width="100%" src="images/framework_cnnfusion.png">     
             </div>
           </centering> 
-          LLaVA-Grounding enables grounding and visual prompts with two additional modules.
+          ViT-Split includes three trainable components.
         <p>
-         <b> Prompt encoder.</b>
+         <b> Task head:</b>
          <!-- <b></b> -->
-          <ol>For an input image \(X_{\texttt{v}}\) and a visual prompt \(X_{\texttt{p}}\), we employ the pre-trained Semantic-SAM as the prompt encoder. This encoder extracts visual features based on the input image and visual prompts, denoted as \(Z_{\texttt{p}}=h(X_{\texttt{v}},X_{\texttt{p}})\). To convert these prompt features into language embedding tokens \(H_{\texttt{p}}\) of the same dimensionality as the word embedding space in the language model, we use a simple linear layer with a trainable projection matrix \(W_{\texttt{p}}\):
-
-            \begin{equation}
-            H_{\texttt{p}}=W_{\texttt{p}} \cdot Z_{\texttt{p}}, \text{ where } Z_{\texttt{p}}=h\left(X_{\texttt{v}},X_{\texttt{p}}\right)
-            \end{equation}</ol>
-         <b> Grounding model. </b>
+          <ol>Early layers of VFMs are capable of learning low-level features which are similar to different tasks, 
+            we avoid tuning the entire backbone by sharing these early layers. Meanwhile, to retain the prior features 
+            of the VFMs, we replicate the final \(K_t\) layers separately, utilizing them as a task-specific adapter (Task-head)
+            for downstream tasks. The hyper-parameter \(K_t\) controls the adapter's size, balancing between model capacity
+            and training efficiency. 
+          </ol>
+         <b> Prior head: </b>
           <!-- <div style="text-align: center;"> -->
-          <ol>In addition to the language response \(X_{\texttt{a}}\), our model also produces features \(X_{\texttt{g}}\) for grounding. we employ a pretrained OpenSeeD model as the grounding model to generate bounding boxes \(\mathbf{B}\) and masks \(\mathbf{M}\). This process can be defined as follows:
-
+          <ol>The prior features learned by VFMs have demonstrated strong performance across a range of downstream tasks. However, 
+            most current VFM adapters and PEFT methods modify these prior features during training. In contrast, our ViT-Split 
+            approach fully leverages the prior knowledge embedded in the multi-scale features of the VFM through a dedicated prior head. 
+            Our rationale for utilizing these prior features is to harness the knowledge learned by VFMs to enhance task-specific features 
+            while mitigating the risk of overfitting downstream tasks. 
+<!-- 
             \begin{equation}
             \mathbf{B, M}=s\left(X_{\texttt{v}},W_{\texttt{g}} \cdot X_{\texttt{g}}\right)
-            \end{equation}</ol>
+            \end{equation} -->
+          </ol>
+
+          <b> Fusion net: </b>
+          <!-- <div style="text-align: center;"> -->
+          <ol>Fusion net is utilized to fuse prior feature map and the task-specific feature map for different downstream 
+            tasks.
+<!-- 
+            \begin{equation}
+            \mathbf{B, M}=s\left(X_{\texttt{v}},W_{\texttt{g}} \cdot X_{\texttt{g}}\right)
+            \end{equation} -->
+          </ol>
+
           </div>
          
 
@@ -362,16 +453,17 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 
 
 
-<section class="section"  style="background-color:#efeff081">
+<section class="section" >
   <!-- Grounedtext2img. -->
   <div class="columns is-centered has-text-centered">
     <div class="column is-six-fifths">
-      <h2 class="title is-3"><img id="painting_icon" width="4%" src="https://cdn-icons-png.flaticon.com/512/1698/1698535.png"> <span style="font-size: 100%;">Comparison with other LMMs:</span> Grounded detailed description </h2>
+      <h2 class="title is-3"><img id="painting_icon" width="3.8%" src="images/experiment-results.png"> <span style="font-size: 100%;">Experiment results:</span> segmentation, detection, VQA </h2>
       
 
 <div class="slideshow-container">
 
   <div style="text-align:center">
+    <span class="dot"></span> 
     <span class="dot"></span> 
     <span class="dot"></span> 
     <span class="dot"></span> 
@@ -386,20 +478,26 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 
 <div class="mySlides fade">
   <div class="numbertext">1 / 11</div>
-  <img src="./images/compare1.png" style="width:100%;" >
-  <div class="text">Example 1: A real-life image.</div>
+  <div class="text">Exp 1: semantic segmentation on ADE20K.</div>
+  <img src="./images/sem_seg_ade20k.png" style="width:55%;" >
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">2 / 11</div>
-  <img src="./images/compare2.png" style="width:100%">
-  <div class="text">Example 2: An open-set concept "dragon".</div>
+  <div class="text">Exp 1: semantic segmentation on Cityscapes.</div>
+  <img src="./images/sem_seg_cityscapes.png" style="width:80%">
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">3 / 11</div>
-  <img src="./images/compare3.png" style="width:100%">
-  <div class="text">Example 3: A real-life image.</div>
+  <div class="text">Exp 2: object detection on COCO val2017.</div>
+  <img src="./images/detection_coco17.png" style="width:50%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 11</div>
+  <div class="text">Exp 3: VQA on multiple benchmarks.</div>
+  <img src="./images/vqa_bench.png" style="width:120%">
 </div>
 
 </div>
@@ -436,10 +534,10 @@ function showSlides() {
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
       <pre><code>
-@misc{zhang2023llavagrounding,
-title={LLaVA-Grounding: Grounded Visual Chat with Large Multimodal Models},
-author={Hao Zhang and Hongyang Li and Feng Li and Tianhe Ren and Xueyan Zou and Shilong Liu and Shijia Huang and Jianfeng Gao and Lei Zhang and Chunyuan Li and Jianwei Yang},
-year={2023},
+@misc{li2025vitsplit,
+title={ViT-Split: Unleashing the Power of Vision Foundation Models via \\ Efficient Splitting Heads},
+author={Yifan Li and Tianqin Li and Xin Li and Wenbin He and Yu Kong and Liu Ren},
+year={2025},
 booktitle={arXiv}
 }
   </code></pre>
@@ -456,17 +554,17 @@ booktitle={arXiv}
       </p>
 
       <p>
-<b>Usage and License Notices</b>: The data, code and checkpoint is intended and licensed for research use only. They are also restricted to uses that follow the license agreement of LLaVA, CLIP, LLaMA, Vicuna and GPT-4. The dataset is CC BY NC 4.0 (allowing only non-commercial use) and models trained using the dataset should not be used outside of research purposes.
+<b>Usage and License Notices</b>: The data, code and checkpoint is intended and licensed for research use only. They are also restricted to uses that follow the license agreement of DINOv2, MaskRCNN, LLaVA and CLIP. The dataset is CC BY NC 4.0 (allowing only non-commercial use) and models trained using the dataset should not be used outside of research purposes.
 </p>
 
-      <p>
+      <!-- <p>
       <a href='https://github.com/Computer-Vision-in-the-Wild/'><img id="painting_icon" width="10%" src="https://avatars.githubusercontent.com/u/97258247?s=200&v=4"></a> 
       Related Links: 
       <a href='https://react-vl.github.io/'>[REACT]</a>  
       <a href='https://gligen.github.io/'>[GLIGEN]</a> 
       <a href='https://github.com/Computer-Vision-in-the-Wild/'>[Computer Vision in the Wild (CVinW)]</a> 
       <a href='https://instruction-tuning-with-gpt-4.github.io/'>[Insutrction Tuning with GPT-4]</a>      
-      </p>    
+      </p>     -->
     </div>
   </section>
 
